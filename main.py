@@ -18,7 +18,7 @@ def handle_start(message):
         last_name = ""
     bot.send_message(message.chat.id, f"Привет, {message.chat.first_name}{last_name}! "
                                       f"Меня зовут {bot.user.username}. Введите команду /help и я расскажу, что умею.",
-                     reply_markup=markup)
+                     )
 
 
 @bot.message_handler(commands=['help'])
